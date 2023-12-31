@@ -1,9 +1,25 @@
+<script>
+import NavbarComponent from './components/NavbarComponent.vue'
+import ProductsComponent from './components/ProductsComponent.vue';
+import CartComponent from './components/CartComponent.vue';
+
+export default {
+  components: {
+    NavbarComponent,
+    ProductsComponent,
+    CartComponent
+  }
+}
+</script>
+
 <template>
-  <div>
-    <button type="button" class="btn btn-primary">網頁環境</button>
+  <div class="container">
+    <NavbarComponent></NavbarComponent>
+    <CartComponent></CartComponent>
+    <ProductsComponent></ProductsComponent>
   </div>
 </template>
 
-<style>
+<style lang="scss">
 @import './assets/all.scss';
 </style>
