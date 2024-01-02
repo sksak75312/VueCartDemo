@@ -8,6 +8,9 @@ export default {
     NavbarComponent,
     ProductsComponent,
     CartComponent
+  },
+  mounted() {
+    console.log(import.meta.env.VITE_TEXT);
   }
 }
 </script>
